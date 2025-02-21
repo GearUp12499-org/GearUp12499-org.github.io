@@ -2,4 +2,4 @@
 
 If anything works, blame shuban
 
-If anyhting breaks, do NOT blame shuban. Blame some random ant or bug or dortio on the ground or smt idk
+If anyhting breaks, do NOT blame shuban. Blame some random ant or bug or dorito on the ground or smt idk
