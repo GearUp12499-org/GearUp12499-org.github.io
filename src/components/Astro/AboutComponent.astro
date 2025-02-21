@@ -1,0 +1,74 @@
+---
+import { about } from '../../data/about';
+---
+
+<main class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Hero Content -->
+    <div class="relative z-10 px-4 pt-32 pb-16">
+        <div class="max-w-5xl mx-auto text-center">
+            <!-- Title with animated gradient -->
+            <h1 
+                class="text-5xl md:text-7xl font-bold font-cal bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent animate-gradient-x whitespace-pre-line"
+            >
+                {about.title}
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto font-sans opacity-0 animate-fade-up animation-delay-100">
+                {about.description}
+            </p>
+            </div>
+        </div>
+    </div>
+
+  
+</main>
+
+<style>
+    @keyframes float {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-10px, 10px); }
+    }
+
+    @keyframes gradient-x {
+        0%, 100% { background-size: 200% 100%; background-position: left center; }
+        50% { background-position: right center; }
+    }
+
+    @keyframes fade-up {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-gradient-x {
+        animation: gradient-x 15s ease infinite;
+    }
+
+    .animate-float {
+        animation: float 8s ease-in-out infinite;
+    }
+
+    .animate-fade-up {
+        animation: fade-up 1s ease forwards;
+    }
+
+    .animation-delay-100 {
+        animation-delay: 100ms;
+    }
+
+    .animation-delay-200 {
+        animation-delay: 200ms;
+    }
+
+    .animation-delay-300 {
+        animation-delay: 300ms;
+    }
+
+    .animation-delay-400 {
+        animation-delay: 400ms;
+    }
+
+    .animation-delay-1000 {
+        animation-delay: 1000ms;
+    }
+</style>
