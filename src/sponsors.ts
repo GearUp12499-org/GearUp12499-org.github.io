@@ -29,4 +29,9 @@ export const sponsors = [
         logo: "sponsors/gobilda.png",
         url: "https://www.gobilda.com/",
     },
+    {
+        name: "Polymaker",
+        logo: "sponsors/polymaker.png",
+        url: "https://polymaker.com/",
+    },
 ];
