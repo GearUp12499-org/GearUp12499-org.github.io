@@ -34,4 +34,9 @@ export const sponsors = [
         logo: "sponsors/polymaker.png",
         url: "https://polymaker.com/",
     },
+    {
+        name: "RISE",
+        logo: "sponsors/rise.png",
+        url: "https://www.rise4steam.org/",
+    },
 ];
