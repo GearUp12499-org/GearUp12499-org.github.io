@@ -25,6 +25,10 @@ export const team = {
         description: "Software | Drive Team",
       },
       {
+        title: "Nishk Shah",
+        description: "Software",
+      },
+      {
         title: "Maanit Mehta",
         description: "Hardware",
       },
