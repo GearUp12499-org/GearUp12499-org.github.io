@@ -63,6 +63,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Check trolling
+        run: |
+          if grep -R -E 'skibidi|sigma' '${{ env.BUILD_PATH }}/src'; then exit 1; fi
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
