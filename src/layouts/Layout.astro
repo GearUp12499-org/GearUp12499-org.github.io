@@ -36,9 +36,9 @@ const {
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={title}
-      titleTemplate="%s | 12499 Gear Up"
-      description="The official website of FTC team 12499 Gear Up."
-      canonical="https://gearup12499-org.github.io/"
+      titleTemplate="%s - Astro Framework Theme"
+      description="Your comprehensive guide to building modern websites with Astro Framework"
+      canonical="https://ultimate-astro-template.vercel.app/"
       noindex={false}
       nofollow={false}
       openGraph={{
@@ -46,7 +46,7 @@ const {
           title: title || "12499 Gear Up",
           type: "website",
           image: "/logo.png",
-          url: "https://gearup12499-org.github.io/",
+          url: "https://ultimate-astro-template.vercel.app/",
         },
         optional: {
           locale: "en_US",
@@ -56,24 +56,24 @@ const {
         },
         image: {
           alt: "Gear Up Logo",
-          width: 630,
+          width: 1200,
           height: 630,
           type: "image/png",
         },
       }}
       extend={{
         meta: [
-          { name: "image", content: "/logo.png" },
-          { name: "title", content: title },
+          { name: "twitter:image", content: "/logo.png" },
+          { name: "twitter:title", content: title },
           {
-            name: "description",
+            name: "twitter:description",
             content:
-              "The official website of FTC team 12499 Gear Up.",
+              "Discover the power of multi-framework development with our ultimate Astro template. From React to Vue, Svelte to Solid - experience them all in one blazing-fast website.",
           },
           { name: "theme-color", content: bgColor },
           { name: "apple-mobile-web-app-capable", content: "yes" },
           { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-          { name: "author", content: "12499 Gear Up" },
+          { name: "author", content: "Ibrahim Elkamali" },
           {
             name: "keywords",
             content:
@@ -83,7 +83,7 @@ const {
         link: [
           {
             rel: "canonical",
-            href: "https://gearup12499-org.github.io/",
+            href: "https://ultimate-astro-template.vercel.app/",
           },
           { rel: "icon", type: "image/png", href: "/favicon.png" },
           { rel: "apple-touch-icon", href: "/favicon.png" },
