@@ -9,7 +9,7 @@ export const home = {
   title: "Gear Up",
   subtitle: "Team 12499",
   description:
-    "A team of high school students from San Diego, California, who compete in the FIRST Tech Challenge Robotics Competition.",
+    "A team of high school students from San Diego, California, passionate about STEM and actively competing in the FIRST Tech Challenge Robotics Competition.",
   features: [
     {
       title: "Powerful Design",
