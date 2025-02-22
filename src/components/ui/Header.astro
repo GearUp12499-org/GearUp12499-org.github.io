@@ -41,9 +41,7 @@ const OPR = await fetch(`https://api.ftcscout.org/rest/v1/teams/${TEAM_NUMBER}/q
                                     ? 'text-black bg-red-500/90 rounded-full border border-gray-800/50'
                                     : 'text-gray-400 hover:text-white'
                             ]}
-                        >
-                            <span class="relative z-10">{framework.displayName}</span>
-                        </a>
+                        ><span class="relative z-10">{framework.displayName}</span></a>
                     </>
                 ))}
             </div>
