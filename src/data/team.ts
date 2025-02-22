@@ -6,15 +6,47 @@ export const team = {
     members: [
       {
         title: "Liam Doran",
-        description: "Sigma Lead",
+        description: "Captain | Hardware Lead | Drive Team",
       },
       {
         title: "Miles Lin",
-        description: "Skibidi Lead",
+        description: "Software Lead",
       },
       {
-        title: "Djungleskog",
-        description: "Emotional Support",
+        title: "Sadhika Kumar",
+        description: "Hardware | Drive Team",
+      },
+      {
+        title: "Aarabhi Panneerselvam",
+        description: "Software",
+      },
+      {
+        title: "Shuban Pal",
+        description: "Software | Drive Team",
+      },
+      {
+        title: "Maanit Mehta",
+        description: "Hardware",
+      },
+      {
+        title: "Ryan Chen",
+        description: "Software",
+      },
+      {
+        title: "Ruel Athyal",
+        description: "Hardware",
+      },
+      {
+        title: "Chloe Tran",
+        description: "Software",
+      },
+      {
+        title: "Maya Keyal",
+        description: "Hardware",
+      },
+      {
+        title: "Naisha Thomre",
+        description: "Hardware",
       },
     ],
 };
