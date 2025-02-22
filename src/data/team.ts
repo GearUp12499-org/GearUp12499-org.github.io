@@ -6,51 +6,51 @@ export const team = {
     members: [
       {
         title: "Liam Doran",
-        description: "Captain | Drive Team",
+        description: "Captain | Drive Team | Junior",
       },
       {
         title: "Miles Lin",
-        description: "Software Lead",
+        description: "Software Lead | Junior",
       },
       {
         title: "Sadhika Kumar",
-        description: "Hardware | Drive Team",
+        description: "Hardware | Drive Team | Senior",
       },
       {
         title: "Aarabhi Panneerselvam",
-        description: "Software",
+        description: "Software | Freshman",
       },
       {
         title: "Shuban Pal",
-        description: "Software | Drive Team",
+        description: "Software | Drive Team | Junior",
       },
       {
         title: "Nishk Shah",
-        description: "Software",
+        description: "Software | Junior",
       },
       {
         title: "Maanit Mehta",
-        description: "Hardware",
+        description: "Hardware | Junior",
       },
       {
         title: "Ryan Chen",
-        description: "Software",
+        description: "Software | Freshman",
       },
       {
         title: "Ruel Athyal",
-        description: "Hardware",
+        description: "Hardware | Sophomore",
       },
       {
         title: "Chloe Tran",
-        description: "Software",
+        description: "Software | Freshman",
       },
       {
         title: "Maya Keyal",
-        description: "Hardware",
+        description: "Hardware | Junior",
       },
       {
         title: "Naisha Thomre",
-        description: "Hardware",
+        description: "Hardware | Junior",e
       },
     ],
 };
