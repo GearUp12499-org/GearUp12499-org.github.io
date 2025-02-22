@@ -10,7 +10,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ultimate-astro-template.vercel.app/",
+  site: "https://gearup12499-org.github.io/",
   output: "static",
   integrations: [
     tailwind({
