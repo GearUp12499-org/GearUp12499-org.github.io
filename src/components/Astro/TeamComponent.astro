@@ -17,6 +17,16 @@ import { team } from '../../data/team';
             <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto font-sans opacity-0 animate-fade-up animation-delay-100">
                 {team.description}
             </p>
+
+            <!-- Members -->
+            <div class="cursor-default grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16 opacity-0 animate-fade-up animation-delay-300">
+                {team.members.map(member => (
+                    <div class="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800/50 hover:border-red-500/50 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">{member.title}</h3>
+                        <p class="text-gray-400 text-sm">{member.description}</p>
+                    </div>
+                ))}
+            </div>
             </div>
         </div>
     </div>
