@@ -50,7 +50,7 @@ export const team = {
       },
       {
         title: "Naisha Thomre",
-        description: "Hardware | Junior",e
+        description: "Hardware | Junior",
       },
     ],
 };
