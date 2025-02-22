@@ -6,7 +6,7 @@ export const team = {
     members: [
       {
         title: "Liam Doran",
-        description: "Captain | Hardware Lead | Drive Team",
+        description: "Captain | Drive Team",
       },
       {
         title: "Miles Lin",
