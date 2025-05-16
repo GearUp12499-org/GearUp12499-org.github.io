@@ -5,3 +5,32 @@ Sitemap: https://gearup12499-org.github.io/
 # Block access to admin or sensitive areas if needed
 # Disallow: /admin/
 # Disallow: /private/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# flag{whyAreYouLookingAtRobots.txt}
