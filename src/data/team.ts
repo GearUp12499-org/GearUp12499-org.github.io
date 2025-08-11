@@ -4,53 +4,67 @@ export const team = {
     description:
       "",
     members: [
-      {
-        title: "Liam Doran",
-        description: "Captain | Drive Team | Junior",
-      },
-      {
-        title: "Miles Lin",
-        description: "Software Lead | Junior",
-      },
-      {
-        title: "Sadhika Kumar",
-        description: "Hardware | Drive Team | Senior",
-      },
-      {
-        title: "Aarabhi Panneerselvam",
-        description: "Software | Freshman",
-      },
-      {
-        title: "Shuban Pal",
-        description: "Software | Drive Team | Junior",
-      },
-      {
-        title: "Nishk Shah",
-        description: "Software | Junior",
-      },
-      {
-        title: "Maanit Mehta",
-        description: "Hardware | Junior",
-      },
-      {
-        title: "Ryan Chen",
-        description: "Software | Freshman",
-      },
-      {
-        title: "Ruel Athyal",
-        description: "Hardware | Sophomore",
-      },
-      {
-        title: "Chloe Tran",
-        description: "Software | Freshman",
-      },
-      {
-        title: "Maya Keyal",
-        description: "Hardware | Junior",
-      },
-      {
-        title: "Naisha Thomre",
-        description: "Hardware | Junior",
-      },
+        {
+          title: "Liam Doran",
+          description: "Captain | Drive Team | Senior",
+        },
+        {
+          title: "Miles Lin",
+          description: "Software Lead | Senior",
+        },
+        {
+          title: "Ruel Athyal",
+          description: "Hardware | Junior",
+        },
+        {
+          title: "Mihir Bapat",
+          description: "Software | Junior"
+        },
+        {
+          title: "Ryan Chen",
+          description: "Software | Sophomore",
+        },
+        {
+          title: "Maya Keyal",
+          description: "Hardware | Senior",
+        },
+        {
+          title: "Maanit Mehta",
+          description: "Hardware | Senior",
+        },
+        {
+          title: "Luke Mun",
+          description: "Hardware + Software | Sophomore",
+        },
+        {
+          title: "Aarabhi Panneerselvam",
+          description: "Software | Sophomore",
+        },
+        {
+          title: "Shuban Pal",
+          description: "Software | Drive Team | Senior",
+        },
+        {
+          title: "Nishk Shah",
+          description: "Software | Senior",
+        },
+        {
+          title: "Ian Shanahan",
+          description: "Hardware + Software | Freshmen",
+        },
+        {
+          title: "Chloe Tran",
+          description: "Hardware | Sophomore",
+        },
+        {
+          title: "Jonathan Tuey",
+          description: "Hardware | Junior",
+        },
+        {
+          title: "Elaine Wen",
+          description: "Software | Sophomore",
+        },
     ],
 };
+
+// Sorted by: Liam and Miles -> everyone else by last name alphabetical order
