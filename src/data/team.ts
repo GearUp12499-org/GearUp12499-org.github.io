@@ -34,7 +34,7 @@ export const team = {
         },
         {
           title: "Luke Mun",
-          description: "Hardware + Software | Sophomore",
+          description: "Hardware, Software | Sophomore",
         },
         {
           title: "Aarabhi Panneerselvam",
@@ -50,7 +50,7 @@ export const team = {
         },
         {
           title: "Ian Shanahan",
-          description: "Hardware + Software | Freshmen",
+          description: "Hardware, Software | Freshmen",
         },
         {
           title: "Chloe Tran",
