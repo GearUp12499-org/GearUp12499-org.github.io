@@ -2,74 +2,103 @@
 import { gallery } from '../../data/gallery';
 ---
 
-<main class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Hero Content -->
-    <div class="relative z-10 px-4 pt-32 pb-16">
-        <div class="max-w-5xl mx-auto text-center">
-            <!-- Title with animated gradient -->
-            <h1 
-                class="text-5xl md:text-7xl font-bold font-cal bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent animate-gradient-x whitespace-pre-line"
-            >
-                {gallery.title}
-            </h1>
+<main class="relative min-h-screen flex flex-col items-center justify-start overflow-hidden py-16 px-4">
+  <!-- Title -->
+  <h1 
+    class="text-5xl md:text-7xl font-bold font-cal bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent animate-gradient-x text-center mt-16 mb-12"
+  >
+    {gallery.title}
+  </h1>
 
-            <!-- Description -->
-            <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto font-sans opacity-0 animate-fade-up animation-delay-100">
-                {gallery.description}
-            </p>
-            </div>
-            <img src="../images/bearOnBasket.jpeg" alt="bear" class="mx-auto block w-36 mb-4 rounded-lg" />
+  <!-- Gallery Grid -->
+  <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12">
+    {gallery.images.map((image, index) => (
+      <div 
+        class="relative overflow-hidden rounded-lg shadow-lg animate-fade-up cursor-pointer gallery-item"
+        style={`animation-delay: ${100 * index}ms;`}
+        data-src={image.src}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          class="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
+        />
+        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+          {image.alt}
         </div>
+      </div>
+    ))}
+  </div>
+
+    <!-- Modal / Lightbox -->
+    <div id="lightbox" class="fixed inset-0 hidden flex items-center justify-center bg-black bg-opacity-75 z-50">
+    <img 
+        id="lightbox-img" 
+        src="" 
+        alt="Enlarged" 
+        class="block max-w-[90%] max-h-[90%] rounded-lg shadow-lg transform scale-0 transition-transform duration-300"
+    />
     </div>
-    
-  
 </main>
 
+<script>
+  // Wait for DOM to load
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // Open modal when any gallery item is clicked
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const src = item.dataset.src;
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          lightboxImg.classList.remove('scale-0');
+          lightboxImg.classList.add('scale-100');
+        });
+      });
+    });
+
+    // Close modal when clicking outside the image
+    lightbox.addEventListener('click', () => {
+      lightboxImg.classList.remove('scale-100');
+      lightboxImg.classList.add('scale-0');
+      setTimeout(() => {
+        lightbox.classList.add('hidden');
+        lightboxImg.src = '';
+      }, 300);
+    });
+
+    // Prevent closing when clicking the image itself
+    lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+  });
+</script>
+
 <style>
-    @keyframes float {
-        0%, 100% { transform: translate(0, 0); }
-        50% { transform: translate(-10px, 10px); }
-    }
+  @keyframes gradient-x {
+      0%, 100% { background-size: 200% 100%; background-position: left center; }
+      50% { background-position: right center; }
+  }
 
-    @keyframes gradient-x {
-        0%, 100% { background-size: 200% 100%; background-position: left center; }
-        50% { background-position: right center; }
-    }
+  @keyframes fade-up {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+  }
 
-    @keyframes fade-up {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
-    }
+  .animate-gradient-x {
+      animation: gradient-x 15s ease infinite;
+  }
 
-    .animate-gradient-x {
-        animation: gradient-x 15s ease infinite;
-    }
+  .animate-fade-up {
+      animation: fade-up 1s ease forwards;
+  }
 
-    .animate-float {
-        animation: float 8s ease-in-out infinite;
-    }
+  .scale-0 {
+    transform: scale(0);
+  }
 
-    .animate-fade-up {
-        animation: fade-up 1s ease forwards;
-    }
-
-    .animation-delay-100 {
-        animation-delay: 100ms;
-    }
-
-    .animation-delay-200 {
-        animation-delay: 200ms;
-    }
-
-    .animation-delay-300 {
-        animation-delay: 300ms;
-    }
-
-    .animation-delay-400 {
-        animation-delay: 400ms;
-    }
-
-    .animation-delay-1000 {
-        animation-delay: 1000ms;
-    }
+  .scale-100 {
+    transform: scale(1);
+  }
 </style>
