@@ -17,10 +17,6 @@ export const team = {
           description: "Hardware | Junior",
         },
         {
-          title: "Mihir Bapat",
-          description: "Software | Junior"
-        },
-        {
           title: "Ryan Chen",
           description: "Software | Sophomore",
         },
