@@ -1,8 +1,8 @@
 export const sponsors = [
     {
-        name: "Leidos",
-        logo: "sponsors/standardized/leidos.jpg",
-        url: "https://www.leidos.com/",
+        name: "Apple",
+        logo: "sponsors/standardized/apple.png",
+        url: "https://www.apple.com/",
     },
     {
         name: "Qualcomm",
