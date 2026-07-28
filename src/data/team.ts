@@ -30,7 +30,7 @@ export const team = {
         },
         {
           title: "Luke Mun",
-          description: "Hardware| Sophomore",
+          description: "Hardware | Sophomore",
         },
         {
           title: "Aarabhi Panneerselvam",
@@ -46,7 +46,7 @@ export const team = {
         },
         {
           title: "Ian Shanahan",
-          description: "Hardware| Freshmen",
+          description: "Hardware | Freshmen",
         },
         {
           title: "Chloe Tran",
