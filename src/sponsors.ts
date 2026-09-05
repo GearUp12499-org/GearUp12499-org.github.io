@@ -39,4 +39,9 @@ export const sponsors = [
         logo: "sponsors/standardized/rise.jpg",
         url: "https://www.rise4steam.org/",
     },
+    {
+        name: "Fabworks",
+        logo: "sponsors/standardized/fabworks.png",
+        url: "https://www.fabworks.com/",
+    }
 ];
