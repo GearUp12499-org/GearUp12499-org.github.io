@@ -26,7 +26,7 @@ export const home = {
   ],
   stats: [
     {
-      value: "5+",
+      value: "10+",
       label: "Years of Experience",
     },
     {
