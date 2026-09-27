@@ -24,11 +24,11 @@ export const sponsors = [
         logo: "sponsors/standardized/ice.jpg",
         url: "https://www.ice.com/index",
     },
-    {
-        name: "goBILDA",
-        logo: "sponsors/standardized/gobilda.jpg",
-        url: "https://www.gobilda.com/",
-    },
+    // {
+    //     name: "goBILDA",
+    //     logo: "sponsors/standardized/gobilda.jpg",
+    //     url: "https://www.gobilda.com/",
+    // },
     {
         name: "Polymaker",
         logo: "sponsors/standardized/polymaker.jpg",
