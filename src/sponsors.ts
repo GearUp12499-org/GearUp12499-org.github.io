@@ -26,8 +26,8 @@ export const sponsors = [
     },
     {
         name: "Online Metals",
-        logo: "public/sponsors/standardized/OnlineMetals.png",
-        url: "https://www.onlinemetals.com/?srsltid=AYCX9vKTV8MS2X-blS1CXsK9eIS8u_V9Fh6GPY9cCHBjuEYnnA9y9k8-",
+        logo: "sponsors/standardized/onlinemetals.png",
+        url: "https://www.onlinemetals.com",
     },
     // {
     //     name: "goBILDA",
