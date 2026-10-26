@@ -26,7 +26,7 @@ export const sponsors = [
     },
     {
         name: "Online Metals",
-        logo: "sponsors/standardized/onlinemetals.png",
+        logo: "public/sponsors/standardized/onlinemetals.jpg",
         url: "https://www.onlinemetals.com",
     },
     // {
