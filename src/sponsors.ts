@@ -24,6 +24,11 @@ export const sponsors = [
         logo: "sponsors/standardized/ice.jpg",
         url: "https://www.ice.com/index",
     },
+    {
+        name: "Online Metals",
+        logo: "public/sponsors/standardized/OnlineMetals.png",
+        url: "https://www.onlinemetals.com/?srsltid=AYCX9vKTV8MS2X-blS1CXsK9eIS8u_V9Fh6GPY9cCHBjuEYnnA9y9k8-",
+    },
     // {
     //     name: "goBILDA",
     //     logo: "sponsors/standardized/gobilda.jpg",
